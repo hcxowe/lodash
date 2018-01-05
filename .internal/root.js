@@ -1,5 +1,7 @@
 import freeGlobal from './freeGlobal.js'
 
+/** 获取顶级全局变量*/
+
 /** Detect free variable `self`. */
 const freeSelf = typeof self == 'object' && self !== null && self.Object === Object && self
 
