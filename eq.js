@@ -2,6 +2,8 @@
  * Performs a
  * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
  * comparison between two values to determine if they are equivalent.
+ * 
+ * 比较两个参数是否相等: 严格相等或者NaN
  *
  * @since 4.0.0
  * @category Lang
