@@ -8,6 +8,8 @@ const hasOwnProperty = Object.prototype.hasOwnProperty
  * Assigns `value` to `key` of `object` if the existing value is not equivalent
  * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
  * for equality comparisons.
+ * 
+ * 如果对象自身属性key不存在或value与属性值不等；value为undefined且对象不存在属性key，则设置属性值或赋值
  *
  * @private
  * @param {Object} object The object to modify.
