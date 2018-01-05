@@ -5,6 +5,7 @@ const symToStringTag = typeof Symbol != 'undefined' ? Symbol.toStringTag : undef
 
 /**
  * The base implementation of `getTag` without fallbacks for buggy environments.
+ * getTage 的基本实现
  *
  * @private
  * @param {*} value The value to query.
@@ -17,11 +18,11 @@ function baseGetTag(value) {
   if (!(symToStringTag && symToStringTag in Object(value))) {
     return toString.call(value)
   }
-  const isOwn = hasOwnProperty.call(value, symToStringTag)
+  const isOwn = hasOwnProperty.call(value, symToStringTag) // 是否symToStringTag是否是value自身属性
   const tag = value[symToStringTag]
   let unmasked = false
   try {
-    value[symToStringTag] = undefined
+    value[symToStringTag] = undefined // 什么情况下会抛出错误？
     unmasked = true
   } catch (e) {}
 
@@ -37,3 +38,15 @@ function baseGetTag(value) {
 }
 
 export default baseGetTag
+
+
+// 通过Symbol.toStringTag设置自己的自定义标签
+/* 
+class ValidatorClass {
+  get [Symbol.toStringTag]() {
+    return 'Validator';
+  }
+}
+
+Object.prototype.toString.call(new ValidatorClass()); // "[object Validator]"
+*/
