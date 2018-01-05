@@ -8,6 +8,8 @@ const hasOwnProperty = Object.prototype.hasOwnProperty
 
 /**
  * Creates an array of the enumerable property names of the array-like `value`.
+ * 
+ * 以类数组 value 可枚举属性名创建一个数组
  *
  * @private
  * @param {*} value The value to query.
