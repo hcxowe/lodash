@@ -1,5 +1,7 @@
 /**
  * Gets the size of an ASCII `string`.
+ * 
+ * 获取ASCII字符串的大小
  *
  * @private
  * @param {string} string The string inspect.
