@@ -1,6 +1,6 @@
 import baseGetTag from './baseGetTag.js'
 
-/** `Object#toString` result references. */
+/** `Object#toString` result references. */ 
 const dataViewTag = '[object DataView]'
 const mapTag = '[object Map]'
 const objectTag = '[object Object]'
@@ -25,6 +25,7 @@ const weakMapCtorString = `${WeakMap}`
 let getTag = baseGetTag
 
 // Fallback for data views, maps, sets, and weak maps in IE 11 and promises in Node.js < 6.
+// 解决IE11以及Node.js<6中，Object#toString工作不一致问题，重新通过类型的构造函数来进行比较
 if ((DataView && getTag(new DataView(new ArrayBuffer(1))) != dataViewTag) ||
     (getTag(new Map) != mapTag) ||
     (getTag(Promise.resolve()) != promiseTag) ||
@@ -34,7 +35,7 @@ if ((DataView && getTag(new DataView(new ArrayBuffer(1))) != dataViewTag) ||
     const result = baseGetTag(value)
     const Ctor = result == objectTag ? value.constructor : undefined
     const ctorString = Ctor ? `${Ctor}` : ''
-
+      
     if (ctorString) {
       switch (ctorString) {
         case dataViewCtorString: return dataViewTag
