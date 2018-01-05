@@ -1,5 +1,7 @@
 /**
  * This function is like `arrayIncludes` except that it accepts a comparator.
+ * 
+ * 同arrayIncludes, 除了它接受比较函数进行查找
  *
  * @private
  * @param {Array} [array] The array to inspect.
