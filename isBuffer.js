@@ -17,7 +17,9 @@ const nativeIsBuffer = Buffer ? Buffer.isBuffer : undefined
 
 /**
  * Checks if `value` is a buffer.
- *
+ * 
+ * 检查 value 是否为 buffer， 用在node环境
+ * 
  * @since 4.3.0
  * @category Lang
  * @param {*} value The value to check.
