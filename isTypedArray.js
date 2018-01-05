@@ -9,6 +9,8 @@ const nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray
 
 /**
  * Checks if `value` is classified as a typed array.
+ * 
+ * 检查 value 是否为  typed array 类型
  *
  * @since 3.0.0
  * @category Lang
