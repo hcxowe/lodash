@@ -26,5 +26,7 @@ var map   = new Map(),
 addMapEntry(map, item); // map => name-lodash 
 
 typeof map; // Object
+
+map.get('name'); // 'lodash'
 */
  
