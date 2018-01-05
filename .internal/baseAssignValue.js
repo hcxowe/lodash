@@ -1,6 +1,8 @@
 /**
  * The base implementation of `assignValue` and `assignMergeValue` without
  * value checks.
+ * 
+ * 给对象属性赋值
  *
  * @private
  * @param {Object} object The object to modify.
