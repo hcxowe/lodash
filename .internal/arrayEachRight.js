@@ -1,5 +1,6 @@
 /**
  * A specialized version of `forEachRight` for arrays.
+ * 逆序arrayforEach
  *
  * @private
  * @param {Array} [array] The array to iterate over.
