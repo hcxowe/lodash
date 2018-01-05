@@ -1,5 +1,7 @@
 /**
  * A specialized version of `reduceRight` for arrays.
+ * 
+ * Array.reduceRight的特定版本
  *
  * @private
  * @param {Array} [array] The array to iterate over.
