@@ -2,6 +2,8 @@ import getTag from './.internal/getTag.js'
 
 /**
  * Checks if `value` is likely an `arguments` object.
+ * 
+ * 检查 value 是否是类 arguments 对象
  *
  * @since 0.1.0
  * @category Lang
@@ -20,3 +22,7 @@ function isArguments(value) {
 }
 
 export default isArguments
+
+/* 
+Object.prototype.toString.call(function(){return arguments;}()); //"[object Arguments]" 
+*/
