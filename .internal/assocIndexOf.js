@@ -2,6 +2,8 @@ import eq from '../eq.js'
 
 /**
  * Gets the index at which the `key` is found in `array` of key-value pairs.
+ * 
+ * 查找array中key的索引
  *
  * @private
  * @param {Array} array The array to inspect.
