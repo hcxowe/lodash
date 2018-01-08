@@ -6,6 +6,8 @@ const reIsPlainProp = /^\w*$/
 
 /**
  * Checks if `value` is a property name and not a property path.
+ * 
+ * 检查 value 是属性名称且不是属性路径
  *
  * @private
  * @param {*} value The value to check.
