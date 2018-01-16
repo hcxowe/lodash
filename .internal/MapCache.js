@@ -4,7 +4,7 @@ import ListCache from './ListCache.js'
 
 /**
  * Gets the data for `map`.
- *
+ * 根据key的类型获取对应的·map·
  * @private
  * @param {Object} map The map to query.
  * @param {string} key The reference key.
@@ -19,7 +19,7 @@ function getMapData({ __data__ }, key) {
 
 /**
  * Checks if `value` is suitable for use as unique object key.
- *
+ * 检查value是否适合做key
  * @private
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is suitable, else `false`.
@@ -35,7 +35,7 @@ class MapCache {
 
   /**
    * Creates a map cache object to store key-value pairs.
-   *
+   * 创建map chache对象存储key-value对
    * @private
    * @constructor
    * @param {Array} [entries] The key-value pairs to cache.

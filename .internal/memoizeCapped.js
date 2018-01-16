@@ -1,6 +1,7 @@
 import memoize from '../memoize.js'
 
 /** Used as the maximum memoize cache size. */
+/* 最大的记录数 */
 const MAX_MEMOIZE_SIZE = 500
 
 /**

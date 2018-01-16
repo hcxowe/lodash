@@ -4,7 +4,7 @@ class ListCache {
 
   /**
    * Creates an list cache object.
-   *
+   * 创建cache对象列表
    * @private
    * @constructor
    * @param {Array} [entries] The key-value pairs to cache.

@@ -1,6 +1,7 @@
 import MapCache from './.internal/MapCache.js'
 
 /**
+ * 记住func函数的返回结构的函数
  * Creates a function that memoizes the result of `func`. If `resolver` is
  * provided, it determines the cache key for storing the result based on the
  * arguments provided to the memoized function. By default, the first argument
@@ -43,9 +44,12 @@ import MapCache from './.internal/MapCache.js'
  * memoize.Cache = WeakMap
  */
 function memoize(func, resolver) {
+
+  // 如果两个参数都不是函数，抛出异常
   if (typeof func != 'function' || (resolver != null && typeof resolver != 'function')) {
     throw new TypeError('Expected a function')
   }
+
   const memoized = function(...args) {
     const key = resolver ? resolver.apply(this, args) : args[0]
     const cache = memoized.cache
