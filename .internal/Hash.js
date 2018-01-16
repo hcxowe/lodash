@@ -1,10 +1,12 @@
 /** Used to stand-in for `undefined` hash values. */
+/* 用来替代为 undefined 的hash值 */
 const HASH_UNDEFINED = '__lodash_hash_undefined__'
 
 class Hash {
 
   /**
    * Creates a hash object.
+   * 创建一个hash对象
    *
    * @private
    * @constructor
@@ -23,7 +25,7 @@ class Hash {
 
   /**
    * Removes all key-value entries from the hash.
-   *
+   * 清空
    * @memberOf Hash
    */
   clear() {
@@ -33,7 +35,7 @@ class Hash {
 
   /**
    * Removes `key` and its value from the hash.
-   *
+   * 删除一项
    * @memberOf Hash
    * @param {Object} hash The hash to modify.
    * @param {string} key The key of the value to remove.
@@ -47,7 +49,7 @@ class Hash {
 
   /**
    * Gets the hash value for `key`.
-   *
+   * 根据key获取value
    * @memberOf Hash
    * @param {string} key The key of the value to get.
    * @returns {*} Returns the entry value.
@@ -60,7 +62,7 @@ class Hash {
 
   /**
    * Checks if a hash value for `key` exists.
-   *
+   * 是否有key对应的项
    * @memberOf Hash
    * @param {string} key The key of the entry to check.
    * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
@@ -72,7 +74,7 @@ class Hash {
 
   /**
    * Sets the hash `key` to `value`.
-   *
+   * 设置key-value
    * @memberOf Hash
    * @param {string} key The key of the value to set.
    * @param {*} value The value to set.
